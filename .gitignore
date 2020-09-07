@@ -19,6 +19,14 @@ Makefile
 /src/config.status
 /src/stamp-h1
 
+/config.h
+/config.h.in
+/config.log
+/config.sub
+/config.status
+/stamp-h1
+/config.guess
+
 # ignore object files
 *.o
 sipsak
