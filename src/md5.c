@@ -170,7 +170,7 @@ unsigned int inputLen;                     /* length of input block */
   inputLen-i);
 }
 
-/* MD5 finalization. Ends an MD5 message-digest operation, writing the
+/* MD5 finalization. Ends an MD5 message-digest operation, writing
   the message digest and zeroizing the context.
  */
 void MD5Final (digest, context)

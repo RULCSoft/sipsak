@@ -112,13 +112,13 @@ void print_long_help() {
 		"  --message-mode             sends messages to itself\n"
 		"  --contact=SIPURI           use the given uri as Contact in REGISTER\n"
 		"  --appendix-begin=NUMBER    the starting number appendix to the user name (default: 0)\n"
-		"  --appendix-end=NUMBER      the ending numer of the appendix to the user name\n"
+		"  --appendix-end=NUMBER      the ending number of the appendix to the user name\n"
 		"  --sleep=NUMBER             sleep number ms before sending next request\n"
 		);
 	printf("  --expires=NUMBER           the expires header field value (default: 15)\n"
 		"  --remove-bindings=NUMBER   activates randomly removing of user bindings\n"
 		"  --flood-mode               activates the flood mode\n"
-		"  --random-mode              activates the random modues (dangerous)\n"
+		"  --random-mode              activates the random modes (dangerous)\n"
 		"  --trash-chars=NUMBER       the maximum number of trashed character in random mode\n"
 		"                               (default: request length)\n"
 		);
@@ -150,7 +150,7 @@ void print_long_help() {
 		"  --message-body=STRING      send a message with string as body\n"
 		"  --disposition=STRING       Content-Disposition value\n"
 		"  --search=REGEXP            search for a RegExp in replies and return error\n"
-		"                             on failfure\n"
+		"                             on failure\n"
 		"  --timing=NUMBER            number of test runs and print just the timings\n"
 		"  --symmetric                send and received on the same port\n"
 		"  --from=SIPURI              use the given uri as From in MESSAGE\n"
@@ -192,14 +192,14 @@ void print_help() {
 	printf(
 		"  -C SIPURI         use the given uri as Contact in REGISTER\n"
 		"  -b NUMBER         the starting number appendix to the user name (default: 0)\n"
-		"  -e NUMBER         the ending numer of the appendix to the user name\n"
+		"  -e NUMBER         the ending number of the appendix to the user name\n"
 		"  -o NUMBER         sleep number ms before sending next request\n"
 		"  -x NUMBER         the expires header field value (default: 15)\n"
 		"  -z NUMBER         activates randomly removing of user bindings\n"
 		"  -F                activates the flood mode\n"
 		);
 	printf(
-		"  -R                activates the random modues (dangerous)\n"
+		"  -R                activates the random modes (dangerous)\n"
 		"  -t NUMBER         the maximum number of trashed character in random mode\n"
 		"                      (default: request length)\n"
 		"  -l PORT           the local port to use (default: any)\n"
@@ -946,7 +946,7 @@ int main(int argc, char *argv[])
 		}
 		if (redirects) {
 			fprintf(stderr, "warning: redirects are not expected in flood. "
-				"disableing\n");
+				"disabling\n");
 			redirects=0;
 		}
 	}
